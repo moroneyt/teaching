@@ -200,13 +200,13 @@ Let's now load our first package: Plots.
 # ╔═╡ 02f9be10-f292-11ea-0a0c-3bc06a079b9c
 md"When this notebook was first opened, the `using Plots` command was executed, and the Julia functions in the Plots package were made available.  As you might guess, the functions in this package are all about producing different kinds of plots.
 
-In fact, Plots is an example of a package in Julia that mostly parcels up existing functionality from other libraries into a convenient interface.  Plotting is an application where there are many existing, mature libraries, and there's little point reinventing the wheel.  Instead, the Plots package provides a common Julia interface to a number of existing plotting backends written in other languages.  The backend we will prefer is called Plotly.  We select it using the `plotly` command."
+In fact, Plots is an example of a package in Julia that mostly parcels up existing functionality from other libraries into a convenient interface.  Plotting is an application where there are many existing, mature libraries, and there's little point reinventing the wheel.  Instead, the Plots package provides a common Julia interface to a number of existing plotting backends written in other languages.  The backend we will prefer is called Plotly.  We select it using the `plotlyjs` command (the js is for JavaScript)."
 
 # ╔═╡ 6700c740-f293-11ea-0c9b-0de97d0772a7
-plotly()
+plotlyjs()
 
 # ╔═╡ 74780b40-f293-11ea-274c-a3612967a4b7
-md"The `using Plots; plotly()` one-two punch will be second nature after the first or second time.  Feel free to experiment with any of the [other plotting backends](https://docs.juliaplots.org/latest/backends/), but for web-based notebooks, the interactivity provided by Plotly makes it our go-to choice.
+md"The `using Plots; plotlyjs()` one-two punch will be second nature after the first or second time.  Feel free to experiment with any of the [other plotting backends](https://docs.juliaplots.org/latest/backends/), but for web-based notebooks, the interactivity provided by Plotly makes it our go-to choice.
 
 OK, so let's give it a whirl!  We'll start by plotting our arrays `x` and `y` from the previous section.
 "
