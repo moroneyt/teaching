@@ -113,7 +113,7 @@ md"If your formula produces the correct result, the text above will show Correct
 x₂ = missing  # replace missing with the correct expression
 
 # ╔═╡ bc9ba090-f251-11ea-2ab8-57c7bef61ded
-x₂≠x₁ && !ismissing(x₂) && a*x₂^2 + b*x₂ + c == 0 ? md" **Correct!**" : md"**Needs more work!**"
+!ismissing(x₂) && x₂≠x₁ && a*x₂^2 + b*x₂ + c == 0 ? md" **Correct!**" : md"**Needs more work!**"
 
 # ╔═╡ dbe23810-f251-11ea-0479-dda6081914f2
 md"Once you've had an attempt, watch the following video for an explanation about some of the more subtle points in this example."
