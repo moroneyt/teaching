@@ -378,7 +378,7 @@ md"Write an array comprehension to generate an array `A` whose `(i,j)`th entry i
 
 
 # ╔═╡ eceb0690-f36a-11ea-1612-6ff60f6d85e4
-Aₛₒₗᵤₜᵢₒₙ = [abs(i-j) for i = 1:10, j = 1:10]
+A_solution = [abs(i-j) for i = 1:10, j = 1:10]
 
 # ╔═╡ 1283cfe0-f36b-11ea-2962-ab94fed27042
 md"Write an array comprehension to generate an array `B` whose `(i,j)`th entry is the two-digit number `ij`.  That is, the entries of this array have the digits of their own Cartesian index, e.g. the value 57 occurs in row 5, column 7."
@@ -387,7 +387,7 @@ md"Write an array comprehension to generate an array `B` whose `(i,j)`th entry i
 
 
 # ╔═╡ 34eb5672-f36b-11ea-2503-575fbf939901
-Bₛₒₗᵤₜᵢₒₙ = [10i+j for i = 1:9, j = 1:9]
+B_solution = [10i+j for i = 1:9, j = 1:9]
 
 # ╔═╡ 1e2f7770-f372-11ea-0118-abf7715c0e16
 md"## Spirals"
